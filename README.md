@@ -9,6 +9,8 @@ conda activate amodal
 bash download.sh
 ```
 
+* In the case that `download.sh` cannot be executed properly, please identify the missing directory and rerun the `wget` command for the corresponding zip file. If the issue persists, please refer to the `download.sh` description below.
+
 ## Run experiments
 
 * Table 1: change the file `Code/configs.py` to set `TABLE_NUM = 1` and `MODEL_TYPE = 'ML'` or `MODEL_TYPE = 'E2E'` and run the command below. 
@@ -22,7 +24,7 @@ cd Code
 python3 run_experiment.py
 ```
 
-## Optional: `download.sh` description:
+## Optional: `download.sh` Description
 
 ### Download models
 

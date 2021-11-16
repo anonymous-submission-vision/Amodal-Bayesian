@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 ### ==== Setups ==== ###
 
-device_ids = [5]
+device_ids = [0]
 
 TABLE_NUM = 1           #   1, 2, 3
 MODEL_TYPE = 'ML'      #   ML, E2E      

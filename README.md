@@ -1,4 +1,4 @@
-# Amodal_Segmentation
+# Amodal Segmentation through Out-of-Task and Out-of-Distribution Generalization with a Bayesian Model
 CVPR22 Submission ID 3504
 
 ## Quick Start: Setup environment / Download models and dataset

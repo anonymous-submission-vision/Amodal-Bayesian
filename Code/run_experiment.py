@@ -368,13 +368,11 @@ if __name__ == '__main__':
     file = open(overall_exp_dir + 'exp_info_{}.txt'.format(dataset_eval), 'w')
 
     if MODEL_TYPE == 'E2E':
-        if TABLE_NUM == 1:
+        if TABLE_NUM == 1 and TABLE_NUM == 3:
             pretrain_file = '../Models/E2E/pascal_final.pth'
 
         elif TABLE_NUM == 2:
             pretrain_file = '../Models/E2E/kinsv_final.pth'
-        elif TABLE_NUM == 3:
-            raise Exception('Model is not trained E2E.')
 
         net.load_state_dict(torch.load(pretrain_file, map_location='cuda:{}'.format(device_ids[0]))['state_dict'])
         print_('Loaded Pretrain Model: {}'.format(pretrain_file), file=file)

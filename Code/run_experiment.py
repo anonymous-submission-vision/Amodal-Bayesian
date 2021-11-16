@@ -368,7 +368,7 @@ if __name__ == '__main__':
     file = open(overall_exp_dir + 'exp_info_{}.txt'.format(dataset_eval), 'w')
 
     if MODEL_TYPE == 'E2E':
-        if TABLE_NUM == 1 and TABLE_NUM == 3:
+        if TABLE_NUM == 1 or TABLE_NUM == 3:
             pretrain_file = '../Models/E2E/pascal_final.pth'
 
         elif TABLE_NUM == 2:
